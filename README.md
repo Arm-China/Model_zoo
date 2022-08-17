@@ -1,7 +1,7 @@
 ## Zhouyi Model Zoo
 
 This repo provides a set of AI models for reference used by Zhouyi SDK.
-| Summary             | Framework     | Input Shape        | Model Source                                                                                                   |
+| Model               | Framework     | Input Shape        | Source                                                                                                         |
 |---------------------|---------------|--------------------|----------------------------------------------------------------------------------------------------------------|
 | age_googlenet       | onnx          | [1, 3, 224, 224]   | https://github.com/onnx/models/tree/master/vision/body_analysis/age_gender                                     |
 | alexnet             | tf            | [1,28,28,1]        | https://github.com/tensorflow/models/tree/archive/research/slim/nets                                           |
@@ -67,7 +67,6 @@ This repo provides a set of AI models for reference used by Zhouyi SDK.
 | mtcnn_o             | caffe         | [1,3,48,48]        | https://github.com/CongWeilin/mtcnn-caffe                                                                      |
 | mtcnn_p             | caffe         | [1,3,12,12]        | https://github.com/CongWeilin/mtcnn-caffe                                                                      |
 | mtcnn_r             | caffe         | [1,3,24,24]        | https://github.com/CongWeilin/mtcnn-caffe                                                                      |
-| nasnet_mobile       | tflite        | [1, 224, 224, 3]   | https://www.tensorflow.org/lite/guide/hosted_models?hl=zh-cn                                                   |
 | peleenet            | caffe         | [1,3,224,224]      | https://github.com/Robert-JunWang/PeleeNet/tree/master/caffe                                                   |
 | regnet_x            | onnx          | [1, 3, 224, 224]   | https://hailo.ai/devzone-model-zoo/about-object-detection/                                                     |
 | resnet_v1_101       | tf            | [1,224,224,3]      | https://github.com/tensorflow/models/tree/archive/research/slim/nets                                           |
