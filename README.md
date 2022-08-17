@@ -1,9 +1,16 @@
 ## Zhouyi Model Zoo
 
-This repo provides configuration file for build tool/NN-compiler usage by Zhouyi SDK.
->**Note**: For all the models listed as below, frozen models are put in SFTP server. 
+This repo provides a set of AI models for reference used by Zhouyi SDK.
+
+Each model provides configuration file for build tool/NN-compiler usage.
+
+>**Note**: For all the models listed as below, this repo provides frozen model in SFTP server besides original link. Some models don't have TFLite version or ONNX version link, as they are converted from TensorFlow/Caffe.
+
 &nbsp;
+
+
 ### Classification
+- [Alexnet](https://github.com/tensorflow/models/tree/archive/research/slim/nets)
 - Resnet-v1-50
   > [TF model](https://github.com/tensorflow/models/tree/archive/research/slim/nets),
     [Caffe model](https://github.com/SnailTyan/caffe-model-zoo)
@@ -12,58 +19,99 @@ This repo provides configuration file for build tool/NN-compiler usage by Zhouyi
   > [TF model](https://github.com/tensorflow/models/tree/archive/research/slim/nets),
     [Caffe model](https://github.com/SnailTyan/caffe-model-zoo)
 - [Resnet-v2-101](https://github.com/soeaver/caffe-model)
+
 - [Resnet-v1-152](https://github.com/tensorflow/models/tree/master/research/slim#Pretrained)
 - [Resnet-v2-152](https://github.com/tensorflow/models/tree/master/research/slim#Pretrained)
+
 - [Resnext-50](https://github.com/soeaver/caffe-model)
+
+- VGG-16
+  > [TF model](https://github.com/tensorflow/models/tree/archive/research/slim/nets),
+  [Caffe model](https://gist.github.com/ksimonyan/211839e770f7b538e2d8#file-readme-md)
+
 - [VGG-19](https://github.com/tensorflow/models/tree/master/research/slim#Pretrained)
+
 - [Inception-v1](https://github.com/tensorflow/models/tree/master/research/slim#Pretrained)
-- inceptiont-v2
-  > [TF model](https://github.com/tensorflow/models/tree/master/research/slim#Pretrained)
-  [onnx_model](https://github.com/onnx/models/tree/master/vision/classification/inception_and_googlenet/inception_v2)
+- Inception-v3
+  > [TF model](https://github.com/tensorflow/models/tree/archive/research/slim/nets),
+    [Caffe model](https://github.com/soeaver/caffe-model/tree/master/cls)
+- Inception-v4
+  > [TF model](https://github.com/tensorflow/models/tree/archive/research/slim/nets),
+    [Caffe model](https://github.com/soeaver/caffe-model/tree/master/cls)
+- [Inception-ResNet-v2](https://github.com/tensorflow/models/tree/master/research/slim#Pretrained)
 - [Xception](https://github.com/soeaver/caffe-model)
 - Mobilenet-v1
   > [TF model](https://github.com/tensorflow/models/tree/master/research/slim#Pretrained),
   [Caffe model](https://github.com/shicai/MobileNet-Caffe)
-- [mobilenet_v3](https://github.com/tensorflow/models/tree/master/research/slim/nets/mobilenet)
+- Mobilenet-v2
+  > [TF model](https://github.com/tensorflow/models/tree/archive/research/slim/nets/mobilenet),
+  [Caffe model](https://github.com/shicai/MobileNet-Caffe)
+
 - [Squeezenet](https://github.com/forresti/SqueezeNet)
-- [densenet_121](https://github.com/soeaver/caffe-model)
-- [dilation8](https://github.com/fyu/dilation)
-- [shufflenet_v1](https://github.com/onnx/models/tree/master/vision/classification/shufflenet)
+
+- Shufflenet-v2
+  > [TF model](https://github.com/TropComplique/shufflenet-v2-tensorflow),
+  [Caffe model](https://github.com/Ewenwan/ShuffleNet-2)
+
+
 - [Densenet-169](https://github.com/soeaver/caffe-model)
 - [DPN68-extra](https://github.com/soeaver/caffe-model)
+- [DPN92](https://github.com/soeaver/caffe-model)
+- [Peleenet](https://github.com/Robert-JunWang/PeleeNet/tree/master/caffe)
 
 ### Detection
-- [mobilenet_v1_ssd](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf1_detection_zoo.md)
+- Mobilenet-v1-SSD
+- Mobilenet-v2-SSD
+  > [TF model](https://github.com/tensorflow/models/tree/archive/research/object_detection/models),
+  [Caffe model](https://github.com/chuanqi305/MobileNet-SSD)
 - [VGG-SSD](https://github.com/weiliu89/caffe/tree/ssd)
-- [YOLO-v3](https://github.com/qqwweee/keras-yolo3)
-- [PFLD](https://github.com/guoqiangqi/PFLD)
+
+- YOLO-v2
+  > [TF model](https://github.com/wojciechmo/yolo2),
+  [Caffe model](https://github.com/tsingjinyun/caffe-yolov2)
+
+- [YOLO-v3](https://github.com/foss-for-synopsys-dwc-arc-processors/synopsys-caffe-models/tree/master/caffe_models/yolo_v3)
+
+- Faster R-CNN
+  > [TF model](http://download.tensorflow.org/models/object_detection/faster_rcnn_resnet50_coco_2018_01_28.tar.gz),
+   [Caffe model](https://github.com/rbgirshick/py-faster-rcnn)
+- [MTCNN](https://github.com/CongWeilin/mtcnn-caffe)
 
 ### Segmentation
-- [fcn32s](https://github.com/wkentaro/pytorch-fcn/)
-- [fcn16s](https://github.com/wkentaro/pytorch-fcn/)
-- [fcn8s](https://github.com/wkentaro/pytorch-fcn/)
+- [FCN](https://github.com/shelhamer/fcn.berkeleyvision.org/tree/master/voc-fcn8s-atonce)
+- [Deeplab-v3](https://github.com/tensorflow/models/tree/archive/research/deeplab)
 - UNet
 - [ENet](https://github.com/TimoSaemann/Enet)
 - [ICNet](https://github.com/hszhao/ICNet)
-- [unet_bio](https://github.com/zhixuhao/unet)
+- [ERFNet](https://github.com/Yuelong-Yu/ERFNet-Caffe)
 
 ### Super-resolution
-- [srcnn](https://github.com/tegg89/SRCNN-Tensorflow)
+- ESPCN
 
-### Pose estimation
-- [centerpose](https://hailo.ai/devzone-model-zoo/pose-estimatiom/)
+### Speech
+- [KWS-GRU](https://github.com/ARM-software/ML-KWS-for-MCU)
+- [Deepspeech-v2](https://github.com/tensorflow/models/tree/archive/research/deep_speech)
+- [Wavenet](https://github.com/buriburisuri/speech-to-text-wavenet)       
 
 &nbsp;
+
+
+
 #### **FTP model download (Suggest FTP tool [FileZilla](https://filezilla-project.org/))**
   - `Host`: sftp://sftp01.armchina.com
   - `Account`:  zhouyi.armchina
   - `Password`:   114r3cJd 
+
+
+
+
 &nbsp;
 
 ## About Zhouyi NPU
 Zhouyi NPU IP is a high efficiency and high performance AI processor that supports wide range of AI application, including vision, audio/speech and NLP. Zhouyi NPU offers fixed function accelerator that speeds up general operations like convolution and activation, meanwhile Zhouyi NPU offers flexible programmability to support new operations or customized operations.
 
 Zhouyi NPU IP has been deployed in a number of market segments, including surveillance, automotive, IOT, etc. With proven peformance and scalablility, Zhouyi NPU IP covers 0.25TOPS to hunders of TOPS, target market from edge computing to data center.
+
 &nbsp;
 
 ## About Zhouyi SDK
