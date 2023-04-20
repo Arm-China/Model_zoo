@@ -8,11 +8,13 @@ This repo provides a set of AI models for reference used by Zhouyi SDK.
 | alexnet               | onnx          | [1,1,28,28]                                 | https://github.com/tensorflow/models/tree/archive/research/slim/nets                                           |
 | alexnet               | tflite(quant) | [1,28,28,1]                                 | https://github.com/tensorflow/models/tree/archive/research/slim/nets                                           |
 | alexnet               | tf            | [1,28,28,1]                                 | https://github.com/tensorflow/models/tree/archive/research/slim/nets                                           |
+| ann                   | onnx          | [1, 3, 1024, 2048]                          | https://github.com/open-mmlab/mmsegmentation/tree/master/configs/ann                                           |
 | arcface               | onnx          | [1, 3, 112, 112]                            | https://github.com/onnx/models/tree/master/vision/body_analysis/arcface                                        |
 | bisenet_v2            | tf            | [4, 512, 1024, 3]                           | https://github.com/MaybeShewill-CV/bisenetv2-tensorflow                                                        |
 | caffenet              | caffe         | [10, 3, 227, 227]                           | https://github.com/BVLC/caffe/tree/master/models/bvlc_reference_caffenet                                       |
 | caffenet              | onnx          | [1, 3, 224, 224]                            | https://github.com/onnx/models/tree/master/vision/classification/caffenet                                      |
 | centerface            | onnx          | [1, 3, 640, 640]                            | https://github.com/ttanzhiqiang/onnx_tensorrt_project                                                          |
+| centernet             | tf            | [1, 512, 512, 3]                            | https://hailo.ai/devzone-model-zoo/object-detection/                                                           |
 | crnn_quant            | tflite(quant) | [1,64,200,3]                                | https://ai-benchmark.com/download.html                                                                         |
 | deeplab_v2            | onnx          | [1, 3, 513, 513]                            | https://github.com/kazuto1011/deeplab-pytorch                                                                  |
 | deeplab_v3            | tflite        | [1,513,513,3]                               | https://github.com/tensorflow/models/tree/archive/research/deeplab                                             |
@@ -22,6 +24,7 @@ This repo provides a set of AI models for reference used by Zhouyi SDK.
 | deepspeech_v2         | onnx          | [1,385,161,1]                               | https://github.com/tensorflow/models/tree/archive/research/deep_speech                                         |
 | deepspeech_v2         | tf            | [1,385,161,1]                               | https://github.com/tensorflow/models/tree/archive/research/deep_speech                                         |
 | densenet_121          | caffe         | [1, 3, 224, 224]                            | https://github.com/soeaver/caffe-model                                                                         |
+| densenet_121          | onnx          | [1, 3, 224, 224]                            | https://github.com/onnx/models/tree/master/vision/classification/densenet-121                                  |
 | densenet_169          | caffe         | [1, 3, 224, 224]                            | https://github.com/soeaver/caffe-model                                                                         |
 | dilation_8            | caffe         | [1, 3, 900, 900]                            | https://github.com/fyu/dilation                                                                                |
 | dped_quant            | tflite(quant) | [1,1536,2048,3]                             | https://ai-benchmark.com/download.html                                                                         |
@@ -48,18 +51,18 @@ This repo provides a set of AI models for reference used by Zhouyi SDK.
 | icnet                 | caffe         | [1, 3, 1025, 2049]                          | https://github.com/hszhao/ICNet                                                                                |
 | imdn_quant            | tflite(quant) | [1,1024,1024,3]                             | https://ai-benchmark.com/download.html                                                                         |
 | inception_resnet_v2   | tflite        | [1, 224, 224, 3]                            | https://www.tensorflow.org/lite/guide/hosted_models?hl=zh-cn                                                   |
-| inception_resnet_v2   | caffe         | [1, 3,331,331]                              | https://github.com/soeaver/caffe-model                                                                         |
 | inception_resnet_v2   | tf            | [1, 299, 299, 3]                            | https://github.com/tensorflow/models/tree/master/research/slim#Pretrained                                      |
+| inception_resnet_v2   | caffe         | [1, 3,331,331]                              | https://github.com/soeaver/caffe-model                                                                         |
 | inception_v1          | tflite(quant) | [1, 224, 224, 3]                            | https://www.tensorflow.org/lite/guide/hosted_models?hl=zh-cn                                                   |
 | inception_v1          | tf            | [1, 224, 224, 3]                            | https://github.com/tensorflow/models/tree/master/research/slim#Pretrained                                      |
 | inception_v2          | tflite(quant) | [1, 224, 224, 3]                            | https://www.tensorflow.org/lite/guide/hosted_models?hl=zh-cn                                                   |
 | inception_v2          | onnx          | [1, 3, 224, 224]                            | https://github.com/onnx/models/tree/master/vision/classification/inception_and_googlenet/inception_v2          |
 | inception_v2          | tf            | [1, 224, 224, 3]                            | https://github.com/tensorflow/models/tree/master/research/slim#Pretrained                                      |
+| inception_v3          | tflite(quant) | [1, 299, 299, 3]                            | https://github.com/tensorflow/models/tree/archive/research/slim/nets                                           |
+| inception_v3          | tf            | [1, 299, 299, 3]                            | https://github.com/tensorflow/models/tree/archive/research/slim/nets                                           |
 | inception_v3          | caffe         | [1, 3, 299, 299]                            | https://github.com/soeaver/caffe-model/tree/master/cls                                                         |
 | inception_v3          | onnx          | [1, 3, 299, 299]                            | https://github.com/tensorflow/models/tree/archive/research/slim/nets                                           |
-| inception_v3          | tflite(quant) | [1,299,299,3]                               | https://github.com/tensorflow/models/tree/archive/research/slim/nets                                           |
-| inception_v3          | tf            | [1,299,299,3]                               | https://github.com/tensorflow/models/tree/archive/research/slim/nets                                           |
-| inception_v3_quant    | tflite(quant) | [1,346,346,3]                               | https://ai-benchmark.com/download.html                                                                         |
+| inception_v3_quant    | tflite(quant) | [1, 346, 346, 3]                            | https://ai-benchmark.com/download.html                                                                         |
 | inception_v4          | caffe         | [1,3,299,299]                               | https://github.com/soeaver/caffe-model/tree/master/cls                                                         |
 | inception_v4          | onnx          | [1,3,299,299]                               | https://github.com/tensorflow/models/tree/archive/research/slim/nets                                           |
 | inception_v4          | tflite(quant) | [1,299,299,3]                               | https://github.com/tensorflow/models/tree/archive/research/slim/nets                                           |
@@ -77,8 +80,8 @@ This repo provides a set of AI models for reference used by Zhouyi SDK.
 | mobilenet_v1_ssd      | tflite        | [300, 300]                                  | https://tfhub.dev/tensorflow/lite-model/ssd_mobilenet_v1/1/metadata/2                                          |
 | mobilenet_v2          | caffe         | [1,3,224,224]                               | https://github.com/shicai/MobileNet-Caffe                                                                      |
 | mobilenet_v2          | tflite(quant) | [1,224,224,3]                               | https://github.com/tensorflow/models/tree/archive/research/slim/nets/mobilenet                                 |
-| mobilenet_v2          | onnx          | [1,3,224,224]                               | https://github.com/tensorflow/models/tree/archive/research/slim/nets/mobilenet                                 |
 | mobilenet_v2          | tf            | [1,224,224,3]                               | https://github.com/tensorflow/models/tree/archive/research/slim/nets/mobilenet                                 |
+| mobilenet_v2          | onnx          | [1,3,224,224]                               | https://github.com/tensorflow/models/tree/archive/research/slim/nets/mobilenet                                 |
 | mobilenet_v2_b8_quant | tflite(quant) | [8,224,224,3]                               | https://ai-benchmark.com/download.html                                                                         |
 | mobilenet_v2_quant    | tflite(quant) | [1,224,224,3]                               | https://ai-benchmark.com/download.html                                                                         |
 | mobilenet_v2_ssd      | tf            | [1,300,300,3]                               | https://github.com/tensorflow/models/tree/archive/research/object_detection/models                             |
@@ -103,7 +106,7 @@ This repo provides a set of AI models for reference used by Zhouyi SDK.
 | punet_quant           | tflite(quant) | [1,544,960,4]                               | https://ai-benchmark.com/download.html                                                                         |
 | pynet_quant           | tflite(quant) | [1,512,512,3]                               | https://ai-benchmark.com/download.html                                                                         |
 | regnet_x              | onnx          | [1, 3, 224, 224]                            | https://hailo.ai/devzone-model-zoo/about-object-detection/                                                     |
-| resnet_34_ssd         | tf            | [1, 1200, 1200, 3]                          | https://github.com/mlcommons/inference/tree/r0.5/v0.5/classification_and_detection                             |
+| resnet_18             | onnx          | [1, 3, 224, 224]                            | https://github.com/onnx/models/tree/main/vision/classification/resnet/model                                    |
 | resnet_v1_101         | tflite(quant) | [1,224,224,3]                               | https://github.com/tensorflow/models/tree/archive/research/slim/nets                                           |
 | resnet_v1_101         | caffe         | [1,3,224,224]                               | https://github.com/SnailTyan/caffe-model-zoo                                                                   |
 | resnet_v1_101         | onnx          | [1,3,224,224]                               | https://github.com/tensorflow/models/tree/archive/research/slim/nets                                           |
@@ -114,8 +117,8 @@ This repo provides a set of AI models for reference used by Zhouyi SDK.
 | resnet_v1_50          | caffe         | [1,3,224,224]                               | https://github.com/SnailTyan/caffe-model-zoo                                                                   |
 | resnet_v1_50          | tf            | [1,224,224,3]                               | https://github.com/tensorflow/models/tree/archive/research/slim/nets                                           |
 | resnet_v2_101         | tf            | [1, 299, 299, 3]                            | https://github.com/tensorflow/models/tree/master/research/slim#Pretrained                                      |
-| resnet_v2_101         | caffe         | [1, 3, 224, 224]                            | https://github.com/soeaver/caffe-model                                                                         |
 | resnet_v2_101         | tflite        | [1, 224, 224, 3]                            | https://www.tensorflow.org/lite/guide/hosted_models?hl=zh-cn                                                   |
+| resnet_v2_101         | caffe         | [1, 3, 224, 224]                            | https://github.com/soeaver/caffe-model                                                                         |
 | resnet_v2_152         | tf            | [1, 299, 299, 3]                            | https://github.com/tensorflow/models/tree/master/research/slim#Pretrained                                      |
 | resnet_v2_152         | caffe         | [1, 3, 224, 224]                            | https://github.com/soeaver/caffe-model                                                                         |
 | resnet_v2_50          | tf            | [1, 299, 299, 3]                            | https://github.com/tensorflow/models/tree/master/research/slim#Pretrained                                      |
@@ -125,20 +128,23 @@ This repo provides a set of AI models for reference used by Zhouyi SDK.
 | rnn_t_decoder         | onnx          | [1, 1],[1, 2, 320],[1, 2, 320],[1, 1, 1024] | https://github.com/mlcommons/inference/tree/master/speech_recognition/rnnt                                     |
 | rnn_t_encoder         | onnx          | [1,249,240]                                 | https://github.com/mlcommons/inference/tree/master/speech_recognition/rnnt                                     |
 | se_inception          | caffe         | [1, 3, 224, 224]                            | https://github.com/openvinotoolkit/open_model_zoo/blob/master/models/public/se-inception/README.md             |
-| se_resnet_101         | caffe         | [1, 3, 224, 224]                             | https://github.com/hujie-frank/SENet                                                                           |
+| se_resnet_101         | caffe         | [1, 3, 224, 224]                            | https://github.com/hujie-frank/SENet                                                                           |
 | se_resnet_50          | tf            | [1, 224, 224, 3]                            | https://github.com/HiKapok/TF-SENet                                                                            |
+| se_resnext_50         | tf            | [1, 224, 224, 3]                            | https://github.com/HiKapok/TF-SENet                                                                            |
 | shufflenet_v1         | onnx          | [1, 3, 224, 224]                            | https://github.com/onnx/models/tree/master/vision/classification/shufflenet                                    |
 | shufflenet_v2         | caffe         | [1,3,224,224]                               | https://github.com/Ewenwan/ShuffleNet-2                                                                        |
 | shufflenet_v2         | tflite(quant) | [1,224,224,3]                               | https://github.com/TropComplique/shufflenet-v2-tensorflow                                                      |
-| shufflenet_v2         | onnx          | [1,3,224,224]                               | https://github.com/TropComplique/shufflenet-v2-tensorflow                                                      |
 | shufflenet_v2         | tf            | [1,224,224,3]                               | https://github.com/TropComplique/shufflenet-v2-tensorflow                                                      |
+| shufflenet_v2         | onnx          | [1,3,224,224]                               | https://github.com/TropComplique/shufflenet-v2-tensorflow                                                      |
 | sne_roadseg           | onnx          | [1,3,384,1248]                              | https://github.com/hlwang1124/SNE-RoadSeg                                                                      |
 | squeezenet            | caffe         | [10, 3, 227, 227]                           | https://github.com/forresti/SqueezeNet                                                                         |
+| squeezenet            | tflite        | [1, 224, 224, 3]                            | https://www.tensorflow.org/lite/guide/hosted_models?hl=zh-cn                                                   |
 | squeezenet_v1         | onnx          | [1, 3, 224, 224]                            | https://github.com/onnx/models/tree/master/vision/classification/squeezenet                                    |
 | srcnn                 | tf            | [1, 33, 33, 1]                              | https://github.com/tegg89/SRCNN-Tensorflow                                                                     |
 | srgan_quant           | tflite(quant) | [1,256,256,3]                               | https://ai-benchmark.com/download.html                                                                         |
 | stacked_hourglass     | tf            | [1, 256, 256, 3]                            | https://github.com/yuanyuanli85/Stacked_Hourglass_Network_Keras                                                |
 | super_resolution      | onnx          | [1, 1, 224, 224]                            | https://github.com/onnx/models/tree/master/vision/super_resolution/sub_pixel_cnn_2016                          |
+| swin_transformer      | onnx          | [1,3,384,384]                               | https://github.com/microsoft/Swin-Transformer                                                                  |
 | unet_bio              | tf            | [1,256, 256,1]                              | https://github.com/zhixuhao/unet                                                                               |
 | unet_quant            | tflite(quant) | [1,1024,1024,3]                             | https://ai-benchmark.com/download.html                                                                         |
 | vgg_16                | onnx          | [1,3,224,224]                               | https://github.com/tensorflow/models/tree/archive/research/slim/nets                                           |
@@ -162,7 +168,9 @@ This repo provides a set of AI models for reference used by Zhouyi SDK.
 | yolo_v3               | caffe         | [1, 3, 608, 608]                            | https://github.com/foss-for-synopsys-dwc-arc-processors/synopsys-caffe-models/tree/master/caffe_models/yolo_v3 |
 | yolo_v4               | onnx          | [1, 416, 416, 3]                            | https://github.com/onnx/models/tree/master/vision/object_detection_segmentation/yolov4                         |
 | yolo_v4_tiny_quant    | tflite(quant) | [1,416,416,3]                               | https://ai-benchmark.com/download.html                                                                         |
+| yolo_v5               | onnx          | [1, 3, 640, 640]                            | https://github.com/ultralytics/yolov5                                                                          |
 | zfnet_512             | onnx          | [1, 3, 224, 224]                            | https://github.com/onnx/models/tree/master/vision/classification/zfnet-512                                     |
+
 
 
 &nbsp;
